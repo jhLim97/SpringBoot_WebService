@@ -1,0 +1,37 @@
+buildscript { // 프로젝트의 플로그인 의존성 관리를 위한 설정
+    ext { // build.gradle에서 사용하는 전역변수 선언
+        springBootVersion = '2.1.7.RELEASE' // 전역변수 springBootVersion은 2.1.7.RELEASE를 의존성으로 받겠다는 의미
+    }
+    repositories { // 각종 의존성(라이브러리)들을 어떤 원격 저장소에서 받을 지 결정
+        mavenCentral()
+        jcenter() // 기존에 많이 사용하던 mavenCentral()의 라이브러리 업로드 난이도를 대체하기 위한 대책으로 나온 저장소
+    }             // -> 라이브러리 업로드 간단화 + 요즘은 jcenter에 라이브러리 업로드 시 mavenCentral에도 업로드 될 수 있도록 자동화 가능(실습에서는 일단 둘 다 사용)
+    dependencies { // 포르젝트에 필요한 각종 의존성들을 선언하는 곳
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+// 앞서 선언한 플러그인 의존성들을 적용할 것인지를 결정하는 코드(이 4가지는 default라 봐도 좋음)
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management' // 스프링 부트의 의존성들을 관리해주는 플러그인
+// ===============================================================================
+
+group 'com.springboot'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web') // 특정 버전을 명시하지 않아야 위에서 작성한 dependencies 버전을 따라감
+    testCompile('org.springframework.boot:spring-boot-starter-test') // 특정 버전을 명시하지 않아야 위에서 작성한 dependencies 버전을 따라감
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0' // 기존 자동완성
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine' // 기존 자동완성
+}
+
+test {
+    useJUnitPlatform()
+}
