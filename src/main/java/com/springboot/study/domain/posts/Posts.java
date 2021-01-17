@@ -1,5 +1,6 @@
 package com.springboot.study.domain.posts;
 
+import com.springboot.study.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import javax.persistence.Id;
 @Getter // 롬복의 어노테이션 : 클래스 내 모든 필드의 Getter 메서드 자동 생성
 @NoArgsConstructor // 롬복의 어노테이션 : 기본 생성자 자동 추가 public Posts() {} 와 같은 효과
 @Entity // JPA 의 어노테이션(주요 어노테이션을 클래스에 가깝게.. 이건 개성에 따라) : 테이블과 링크될 클래스임을 나타내며, 기본값으로 카멜케이스 이름을 언더스코어 네이밍으로 테이블 이름을 매칭
-public class Posts { // JPA 사용 시 DB 작업할 경우 실제 쿼리를 날리는 것이 아닌, 이 Entity 클래스의 수정을 통해 작업
+public class Posts extends BaseTimeEntity { // JPA 사용 시 DB 작업할 경우 실제 쿼리를 날리는 것이 아닌, 이 Entity 클래스의 수정을 통해 작업
 
     @Id // 해당 테이블의 PK 필드를 나타냄
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK 의 생성 규칙을 나타내며, 스프링 부트 2.0에서는 GenerationType.IDENTITY 옵션을 추가해야만 auto_increment 가 됨
@@ -33,6 +34,11 @@ public class Posts { // JPA 사용 시 DB 작업할 경우 실제 쿼리를 날�
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
     }
 
 }
