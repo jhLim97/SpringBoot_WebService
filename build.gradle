@@ -21,7 +21,7 @@ test { // (2) Junit 5를 사용하기 위해서 필수 선언
 dependencies {
     //(3)
     implementation('org.springframework.boot:spring-boot-starter-web') // 특정 버전을 명시하지 않아야 위에서 작성한 dependencies 버전을 따라감(이 부분은 추후 다시 체크)
-    implementation('org.springframework.boot:spring-boot-starter-mustache')
+    implementation('org.springframework.boot:spring-boot-starter-mustache') // 머스타치 플러그인 의존성 추가
 
     // lombok
     implementation('org.projectlombok:lombok') // 롬복 라이브러리를 사용하기 위해 추가
