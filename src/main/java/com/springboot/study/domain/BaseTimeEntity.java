@@ -3,6 +3,7 @@ package com.springboot.study.domain;
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
+import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.EntityListeners;
@@ -17,6 +18,6 @@ public class BaseTimeEntity { // 모든 Entity 의 상위 클래스가 되어 En
     @CreatedDate // Entity 가 생성되어 저장 될때 시간이 자동 저장됨
     private LocalDateTime createdDate;
 
-    @LastModifiedBy // 조회한 Entity 의 값을 변경할 때 시간이 자동 저장됨
+    @LastModifiedDate // 조회한 Entity 의 값을 변경할 때 시간이 자동 저장됨
     private LocalDateTime modifiedDate;
 }

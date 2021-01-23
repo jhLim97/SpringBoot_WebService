@@ -6,3 +6,5 @@ com/springboot/study/web/PostsApiControllerTest.java
  com.springboot.study.web.PostsApiControllerTest
 com/springboot/study/web/domain/posts/PostRepositoryTest.java
  com.springboot.study.web.domain.posts.PostRepositoryTest
+com/springboot/study/web/IndexContollerTest.java
+ com.springboot.study.web.IndexContollerTest

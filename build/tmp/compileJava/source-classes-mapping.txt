@@ -5,6 +5,8 @@ com/springboot/study/web/dto/PostsUpdateRequestDto.java
  com.springboot.study.web.dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
 com/springboot/study/web/HelloController.java
  com.springboot.study.web.HelloController
+com/springboot/study/Application.java
+ com.springboot.study.Application
 com/springboot/study/domain/posts/PostsRepository.java
  com.springboot.study.domain.posts.PostsRepository
 com/springboot/study/web/dto/PostsSaveRequestDto.java
@@ -13,13 +15,15 @@ com/springboot/study/web/dto/PostsSaveRequestDto.java
 com/springboot/study/domain/posts/Posts.java
  com.springboot.study.domain.posts.Posts
  com.springboot.study.domain.posts.Posts$PostsBuilder
+com/springboot/study/domain/BaseTimeEntity.java
+ com.springboot.study.domain.BaseTimeEntity
+com/springboot/study/web/dto/PostsResponseDto.java
+ com.springboot.study.web.dto.PostsResponseDto
+com/springboot/study/web/dto/PostsListResponseDto.java
+ com.springboot.study.web.dto.PostsListResponseDto
 com/springboot/study/web/PostsApiController.java
  com.springboot.study.web.PostsApiController
 com/springboot/study/service/posts/PostsService.java
  com.springboot.study.service.posts.PostsService
-com/springboot/study/domain/BaseTimeEntity.java
- com.springboot.study.domain.BaseTimeEntity
-com/springboot/study/Application.java
- com.springboot.study.Application
-com/springboot/study/web/dto/PostsResponseDto.java
- com.springboot.study.web.dto.PostsResponseDto
+com/springboot/study/web/IndexController.java
+ com.springboot.study.web.IndexController
