@@ -24,7 +24,7 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-mustache') // 머스타치 플러그인 의존성 추가
 
     // lombok
-    implementation('org.projectlombok:lombok') // 롬복 라이브러리를 사용하기 위해 추가
+    implementation('org.projectlombok:lombok')
     annotationProcessor('org.projectlombok:lombok')
     testImplementation('org.projectlombok:lombok')
     testAnnotationProcessor('org.projectlombok:lombok')
@@ -32,6 +32,8 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-data-jpa') // 스프링 부트용 Spring Data Jpa 추상화 라이브러리 -> 스프링 부트 버전에 맞춰 자동을 JPA 관련 라이브러리들의 버전 관리
     implementation("org.mariadb.jdbc:mariadb-java-client")
     implementation('com.h2database:h2') // 인메모리 관계형 데이터베이스(별도의 설치 없이 의존성만으로 관리가능), 메모리에서 실행되므로 애플리케이션을 재시작할 때마다 초기화 -> 테스트용도로 사용
+
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client') // 스프링 시큐리티 관련 -> 소셜 로그인 등 클라이언트 입장에서 소셜 기능 구현 시 필요한 의존성
 
     testImplementation('org.springframework.boot:spring-boot-starter-test') // 특정 버전을 명시하지 않아야 위에서 작성한 dependencies 버전을 따라감(이 부분은 추후 다시 체크)
 }
