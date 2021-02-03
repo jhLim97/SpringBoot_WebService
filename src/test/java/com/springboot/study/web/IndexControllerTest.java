@@ -11,7 +11,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = RANDOM_PORT)
-public class IndexContollerTest { // 실제 url 호출 시 페이지의 내용이 제대로 호출되는지 여부를 확인
+public class IndexControllerTest { // 실제 url 호출 시 페이지의 내용이 제대로 호출되는지 여부를 확인
 
     @Autowired
     private TestRestTemplate restTemplate;

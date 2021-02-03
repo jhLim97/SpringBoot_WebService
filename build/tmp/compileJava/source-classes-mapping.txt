@@ -1,29 +1,53 @@
-com/springboot/study/web/dto/HelloResponseDto.java
- com.springboot.study.web.dto.HelloResponseDto
-com/springboot/study/web/dto/PostsUpdateRequestDto.java
- com.springboot.study.web.dto.PostsUpdateRequestDto
- com.springboot.study.web.dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
-com/springboot/study/web/HelloController.java
- com.springboot.study.web.HelloController
-com/springboot/study/Application.java
- com.springboot.study.Application
-com/springboot/study/domain/posts/PostsRepository.java
- com.springboot.study.domain.posts.PostsRepository
-com/springboot/study/web/dto/PostsSaveRequestDto.java
- com.springboot.study.web.dto.PostsSaveRequestDto
- com.springboot.study.web.dto.PostsSaveRequestDto$PostsSaveRequestDtoBuilder
 com/springboot/study/domain/posts/Posts.java
  com.springboot.study.domain.posts.Posts
  com.springboot.study.domain.posts.Posts$PostsBuilder
-com/springboot/study/domain/BaseTimeEntity.java
- com.springboot.study.domain.BaseTimeEntity
-com/springboot/study/web/dto/PostsResponseDto.java
- com.springboot.study.web.dto.PostsResponseDto
-com/springboot/study/web/dto/PostsListResponseDto.java
- com.springboot.study.web.dto.PostsListResponseDto
+com/springboot/study/domain/user/Role.java
+ com.springboot.study.domain.user.Role
+com/springboot/study/web/IndexController.java
+ com.springboot.study.web.IndexController
+com/springboot/study/config/auth/SecurityConfig.java
+ com.springboot.study.config.auth.SecurityConfig
+com/springboot/study/web/HelloController.java
+ com.springboot.study.web.HelloController
 com/springboot/study/web/PostsApiController.java
  com.springboot.study.web.PostsApiController
 com/springboot/study/service/posts/PostsService.java
  com.springboot.study.service.posts.PostsService
-com/springboot/study/web/IndexController.java
- com.springboot.study.web.IndexController
+com/springboot/study/web/dto/PostsListResponseDto.java
+ com.springboot.study.web.dto.PostsListResponseDto
+com/springboot/study/config/WebConfig.java
+ com.springboot.study.config.WebConfig
+com/springboot/study/domain/BaseTimeEntity.java
+ com.springboot.study.domain.BaseTimeEntity
+com/springboot/study/web/dto/PostsUpdateRequestDto.java
+ com.springboot.study.web.dto.PostsUpdateRequestDto
+ com.springboot.study.web.dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
+com/springboot/study/config/auth/CustomOAuth2UserService.java
+ com.springboot.study.config.auth.CustomOAuth2UserService
+com/springboot/study/web/dto/PostsResponseDto.java
+ com.springboot.study.web.dto.PostsResponseDto
+com/springboot/study/web/dto/PostsSaveRequestDto.java
+ com.springboot.study.web.dto.PostsSaveRequestDto
+ com.springboot.study.web.dto.PostsSaveRequestDto$PostsSaveRequestDtoBuilder
+com/springboot/study/domain/user/UserRepository.java
+ com.springboot.study.domain.user.UserRepository
+com/springboot/study/config/auth/dto/SessionUser.java
+ com.springboot.study.config.auth.dto.SessionUser
+com/springboot/study/web/dto/HelloResponseDto.java
+ com.springboot.study.web.dto.HelloResponseDto
+com/springboot/study/domain/user/User.java
+ com.springboot.study.domain.user.User
+ com.springboot.study.domain.user.User$UserBuilder
+com/springboot/study/domain/posts/PostsRepository.java
+ com.springboot.study.domain.posts.PostsRepository
+com/springboot/study/config/auth/LoginUser.java
+ com.springboot.study.config.auth.LoginUser
+com/springboot/study/config/auth/LoginUserArgumentResolver.java
+ com.springboot.study.config.auth.LoginUserArgumentResolver
+com/springboot/study/config/auth/dto/OAuthAttributes.java
+ com.springboot.study.config.auth.dto.OAuthAttributes
+ com.springboot.study.config.auth.dto.OAuthAttributes$OAuthAttributesBuilder
+com/springboot/study/config/JpaConfig.java
+ com.springboot.study.config.JpaConfig
+com/springboot/study/Application.java
+ com.springboot.study.Application

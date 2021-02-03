@@ -1,17 +1,17 @@
 {{>layout/header}} <!-- 현재 머스테치 파일 기준으로 다른 파일을 가져옴 -->
 
-<h1>스프링부트로 시작하는 웹 서비스 Ver.2</h1>
+<h1>스프링 부트로 시작하는 웹 서비스 Ver.2</h1>
 <div class="col-md-12">
     <div class="row">
         <div class="col-md-6">
             <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
             {{#userName}}
                 Logged in as: <span id="user">{{userName}}</span>
-                <a href="/logout" class="btn btn-info active" role="button">Logout</a>
+                <a href="/logout" class="btn btn-info active" role="button">Logout</a> <!-- "/logout"의 경우 스프링 시큐리티에서 기본적으로 제공하는 로그아웃 url -> 별도의 컨트롤러 구현필요 x -->
             {{/userName}}
-            {{^userName}}
-                <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
-                <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
+            {{^userName}} <!-- 값이 존재하지 않는 경우 ^ 사용 -->
+                <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a> <!-- "/oauth2/authorization/google"의 경우 스프링 시큐리티에서 기본적으로 제공하는 로그인 url -> 별도의 컨트롤러 구현필요 x -->
+                <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a> <!-- 네이버 로그인 url 은 application-oauth.properties 에 등록한 redirect-uri 값에 맞춰 자동 등록 -->
             {{/userName}}
         </div>
     </div>
