@@ -1,1 +1,2 @@
-*.html linguist-vendored
+build/reports/tests/test/classes/*.html linguist-vendored
+build/reports/tests/test/packages/*.html linguist-vendored
